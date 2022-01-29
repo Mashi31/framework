@@ -89,8 +89,8 @@ CREATE TABLE IF NOT EXISTS `characters_homes`(
   KEY `ssn` (`ssn`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1;
 
---Dumping structure for table chest
-CREATE TABLE `chest` (
+-- Dumping structure for table chest
+CREATE TABLE IF NOT EXISTS `chest` (
 	`id` INT(10) NOT NULL AUTO_INCREMENT,
 	`cords` VARCHAR(50) NOT NULL DEFAULT '',
 	`chest` LONGTEXT NOT NULL DEFAULT '[]',
